@@ -10,10 +10,10 @@ import Areas from './Areas.js'
 import Tiles from './Tiles.js'
 import Walls from './Walls.js'
 import IntroSection from './Sections/IntroSection.js'
-import ProjectsSection from './Sections/ProjectsSection.js'
-import CrossroadsSection from './Sections/CrossroadsSection.js'
-import InformationSection from './Sections/InformationSection.js'
-import PlaygroundSection from './Sections/PlaygroundSection.js'
+// import ProjectsSection from './Sections/ProjectsSection.js'
+// import CrossroadsSection from './Sections/CrossroadsSection.js'
+// import InformationSection from './Sections/InformationSection.js'
+// import PlaygroundSection from './Sections/PlaygroundSection.js'
 // import DistinctionASection from './Sections/DistinctionASection.js'
 // import DistinctionBSection from './Sections/DistinctionBSection.js'
 // import DistinctionCSection from './Sections/DistinctionCSection.js'
@@ -21,7 +21,7 @@ import PlaygroundSection from './Sections/PlaygroundSection.js'
 import Controls from './Controls.js'
 import Sounds from './Sounds.js'
 import gsap from 'gsap'
-import EasterEggs from './EasterEggs.js'
+// import EasterEggs from './EasterEggs.js'
 
 export default class World
 {
@@ -75,7 +75,7 @@ export default class World
         this.setTiles()
         this.setWalls()
         this.setSections()
-        this.setEasterEggs()
+        // this.setEasterEggs()
     }
 
     setReveal()
@@ -456,57 +456,57 @@ export default class World
         })
         this.container.add(this.sections.intro.container)
 
-        // Crossroads
-        this.sections.crossroads = new CrossroadsSection({
-            ...options,
-            x: 0,
-            y: - 30
-        })
-        this.container.add(this.sections.crossroads.container)
+        // // Crossroads
+        // this.sections.crossroads = new CrossroadsSection({
+        //     ...options,
+        //     x: 0,
+        //     y: - 30
+        // })
+        // this.container.add(this.sections.crossroads.container)
 
-        // Projects
-        this.sections.projects = new ProjectsSection({
-            ...options,
-            x: 30,
-            y: - 30
-            // x: 0,
-            // y: 0
-        })
-        this.container.add(this.sections.projects.container)
+        // // Projects
+        // this.sections.projects = new ProjectsSection({
+        //     ...options,
+        //     x: 30,
+        //     y: - 30
+        //     // x: 0,
+        //     // y: 0
+        // })
+        // this.container.add(this.sections.projects.container)
 
-        // Information
-        this.sections.information = new InformationSection({
-            ...options,
-            x: 1.2,
-            y: - 55
-            // x: 0,
-            // y: - 10
-        })
-        this.container.add(this.sections.information.container)
+        // // Information
+        // this.sections.information = new InformationSection({
+        //     ...options,
+        //     x: 1.2,
+        //     y: - 55
+        //     // x: 0,
+        //     // y: - 10
+        // })
+        // this.container.add(this.sections.information.container)
 
-        // Playground
-        this.sections.playground = new PlaygroundSection({
-            ...options,
-            x: - 38,
-            y: - 34
-            // x: - 15,
-            // y: - 4
-        })
-        this.container.add(this.sections.playground.container)
+        // // Playground
+        // this.sections.playground = new PlaygroundSection({
+        //     ...options,
+        //     x: - 38,
+        //     y: - 34
+        //     // x: - 15,
+        //     // y: - 4
+        // })
+        // this.container.add(this.sections.playground.container)
     }
 
-    setEasterEggs()
-    {
-        this.easterEggs = new EasterEggs({
-            resources: this.resources,
-            car: this.car,
-            walls: this.walls,
-            objects: this.objects,
-            materials: this.materials,
-            areas: this.areas,
-            config: this.config,
-            physics: this.physics
-        })
-        this.container.add(this.easterEggs.container)
-    }
+    // setEasterEggs()
+    // {
+    //     this.easterEggs = new EasterEggs({
+    //         resources: this.resources,
+    //         car: this.car,
+    //         walls: this.walls,
+    //         objects: this.objects,
+    //         materials: this.materials,
+    //         areas: this.areas,
+    //         config: this.config,
+    //         physics: this.physics
+    //     })
+    //     this.container.add(this.easterEggs.container)
+    // }
 }

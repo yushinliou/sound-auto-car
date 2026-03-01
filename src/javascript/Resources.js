@@ -42,35 +42,36 @@ export default class Resources extends EventEmitter
             { name: 'introArrowKeyBase', source: './models/intro/arrowKey/base.glb' },
             { name: 'introArrowKeyCollision', source: './models/intro/arrowKey/collision.glb' },
 
-            { name: 'introBBase', source: './models/intro/b/base.glb' },
-            { name: 'introBCollision', source: './models/intro/b/collision.glb' },
+            // REMOVED: BRUNO SIMON letter blocks - commented out to reduce load time
+            // { name: 'introBBase', source: './models/intro/b/base.glb' },
+            // { name: 'introBCollision', source: './models/intro/b/collision.glb' },
 
-            { name: 'introRBase', source: './models/intro/r/base.glb' },
-            { name: 'introRCollision', source: './models/intro/r/collision.glb' },
+            // { name: 'introRBase', source: './models/intro/r/base.glb' },
+            // { name: 'introRCollision', source: './models/intro/r/collision.glb' },
 
-            { name: 'introUBase', source: './models/intro/u/base.glb' },
-            { name: 'introUCollision', source: './models/intro/u/collision.glb' },
+            // { name: 'introUBase', source: './models/intro/u/base.glb' },
+            // { name: 'introUCollision', source: './models/intro/u/collision.glb' },
 
-            { name: 'introNBase', source: './models/intro/n/base.glb' },
-            { name: 'introNCollision', source: './models/intro/n/collision.glb' },
+            // { name: 'introNBase', source: './models/intro/n/base.glb' },
+            // { name: 'introNCollision', source: './models/intro/n/collision.glb' },
 
-            { name: 'introOBase', source: './models/intro/o/base.glb' },
-            { name: 'introOCollision', source: './models/intro/o/collision.glb' },
+            // { name: 'introOBase', source: './models/intro/o/base.glb' },
+            // { name: 'introOCollision', source: './models/intro/o/collision.glb' },
 
-            { name: 'introSBase', source: './models/intro/s/base.glb' },
-            { name: 'introSCollision', source: './models/intro/s/collision.glb' },
+            // { name: 'introSBase', source: './models/intro/s/base.glb' },
+            // { name: 'introSCollision', source: './models/intro/s/collision.glb' },
 
-            { name: 'introIBase', source: './models/intro/i/base.glb' },
-            { name: 'introICollision', source: './models/intro/i/collision.glb' },
+            // { name: 'introIBase', source: './models/intro/i/base.glb' },
+            // { name: 'introICollision', source: './models/intro/i/collision.glb' },
 
-            { name: 'introMBase', source: './models/intro/m/base.glb' },
-            { name: 'introMCollision', source: './models/intro/m/collision.glb' },
+            // { name: 'introMBase', source: './models/intro/m/base.glb' },
+            // { name: 'introMCollision', source: './models/intro/m/collision.glb' },
 
-            { name: 'introCreativeBase', source: './models/intro/creative/base.glb' },
-            { name: 'introCreativeCollision', source: './models/intro/creative/collision.glb' },
+            // { name: 'introCreativeBase', source: './models/intro/creative/base.glb' },
+            // { name: 'introCreativeCollision', source: './models/intro/creative/collision.glb' },
 
-            { name: 'introDevBase', source: './models/intro/dev/base.glb' },
-            { name: 'introDevCollision', source: './models/intro/dev/collision.glb' },
+            // { name: 'introDevBase', source: './models/intro/dev/base.glb' },
+            // { name: 'introDevCollision', source: './models/intro/dev/collision.glb' },
 
             // Intro
             { name: 'crossroadsStaticBase', source: './models/crossroads/static/base.glb' },
