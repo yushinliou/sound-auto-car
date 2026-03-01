@@ -266,3 +266,21 @@ html
     transform-origin: 100% 0;
     opacity: 0.2;
 }
+
+/* Audio Feedback Toggle */
+.audio-feedback-toggle
+{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.audio-feedback-toggle.is-visible
+{
+    opacity: 1;
+}
+
+.audio-feedback-toggle button:hover
+{
+    opacity: 0.8 !important;
+    transform: scale(1.05);
+}

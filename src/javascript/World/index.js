@@ -20,6 +20,7 @@ import IntroSection from './Sections/IntroSection.js'
 // import DistinctionDSection from './Sections/DistinctionDSection.js'
 import Controls from './Controls.js'
 import Sounds from './Sounds.js'
+import AudioFeedback from './AudioFeedback.js'
 import gsap from 'gsap'
 // import EasterEggs from './EasterEggs.js'
 
@@ -51,6 +52,7 @@ export default class World
 
         // this.setAxes()
         this.setSounds()
+        this.setAudioFeedback()
         this.setControls()
         this.setFloor()
         this.setAreas()
@@ -125,6 +127,12 @@ export default class World
                 {
                     this.controls.touch.reveal()
                 }, 400)
+            }
+
+            // Audio feedback
+            if(this.audioFeedback)
+            {
+                this.audioFeedback.start()
             }
         }
 
@@ -253,6 +261,28 @@ export default class World
         this.sounds = new Sounds({
             debug: this.debugFolder,
             time: this.time
+        })
+    }
+
+    setAudioFeedback()
+    {
+        this.audioFeedback = new AudioFeedback({
+            debug: this.debugFolder,
+            time: this.time,
+            sounds: this.sounds
+        })
+
+        // Add tick listener for audio feedback updates
+        this.time.on('tick', () =>
+        {
+            if(this.physics && this.physics.car && this.audioFeedback)
+            {
+                this.audioFeedback.update(
+                    this.physics.car.steering,
+                    this.physics.car.speed,
+                    this.physics.car.forwardSpeed
+                )
+            }
         })
     }
 
