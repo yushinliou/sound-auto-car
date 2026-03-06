@@ -1,6 +1,11 @@
 import * as Tone from 'tone'
 import AudioRecorder from './AudioRecorder.js'
 
+// Danger Zone Music — change 'key' to any filename in static/sounds/danger-zone/
+export const DANGER_ZONE_MUSIC = {
+    key: 'dangerous-dumb'
+}
+
 // ============================================================
 // Audio Presets
 // Each preset defines the full audio configuration.

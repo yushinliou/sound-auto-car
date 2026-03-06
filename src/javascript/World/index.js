@@ -21,6 +21,8 @@ import IntroSection from './Sections/IntroSection.js'
 import Controls from './Controls.js'
 import Sounds from './Sounds.js'
 import AudioFeedback from './AudioFeedback.js'
+import DangerZone from './DangerZone.js'
+import { DANGER_ZONE_MUSIC } from './AudioFeedback.js'
 import gsap from 'gsap'
 // import EasterEggs from './EasterEggs.js'
 
@@ -73,6 +75,7 @@ export default class World
         this.setZones()
         this.setObjects()
         this.setCar()
+        this.setDangerZone()
         this.areas.car = this.car
         this.setTiles()
         this.setWalls()
@@ -425,6 +428,18 @@ export default class World
             config: this.config
         })
         this.container.add(this.car.container)
+    }
+
+    setDangerZone()
+    {
+        this.dangerZone = new DangerZone({
+            time: this.time,
+            car: this.car,
+            position: { x: 20, y: 20 },
+            radius: 16,
+            musicKey: DANGER_ZONE_MUSIC.key
+        })
+        this.container.add(this.dangerZone.container)
     }
 
     setSections()
